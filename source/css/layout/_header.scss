@@ -1,0 +1,55 @@
+.site-header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    border-bottom: 1px solid #f7f7f7;
+    padding: 0 10px;
+    width: 100%;
+    height: 50px;
+
+    line-height: 49px;
+    text-align: center;
+
+    background-color: #fefefe;
+
+    @extend %clearfix;
+}
+
+.site-title {
+    float: left;
+
+    margin-right: 40px;
+    font-weight: 400;
+}
+
+.site-nav {
+    float: left;
+}
+
+.share-menu {
+    float: right;
+}
+
+.menu-list {
+    list-style: none;
+    height: 49px;
+    font-size: 0;
+    li {
+        display: inline-block;
+
+        margin-right: 15px;
+        line-height: 49px;
+        &:last-child {
+            margin-right: 0;
+        }
+        .iconfont {
+            font-size: 20px;
+
+            color: #666;
+            &:hover {
+                color: #333;
+            }
+        }
+    }
+}

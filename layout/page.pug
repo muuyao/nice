@@ -1,0 +1,8 @@
+extends base
+
+prepend site_title
+  | #{page.title} |&nbsp;
+
+block site_body
+  include _partial/header.pug
+  include _partial/page.pug

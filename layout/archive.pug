@@ -1,0 +1,10 @@
+extends base.pug
+
+prepend site_title
+  | !{__('archives')} |&nbsp;
+
+block site_body
+  include _partial/header.pug
+  include _partial/list.pug
+
+

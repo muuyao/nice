@@ -1,0 +1,21 @@
+.list-pagination{
+    position: relative;
+    text-align: center;
+    font-size: 0;
+    z-index: 1;
+
+    span,
+    a{
+        font-size: $baseFontSize;
+        display: inline-block;
+        border: 1px solid #eaeaea;
+
+        padding: 10px 20px;
+        background-color: #fff;
+    }
+
+    .current{
+        background-color: #eaeaea;
+    }
+
+}

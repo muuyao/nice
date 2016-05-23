@@ -1,0 +1,9 @@
+doctype html
+html(lang=config.language)
+    head
+        include _partial/head.pug
+    body
+        .site-page
+            block site_body
+            include _partial/footer.pug
+        include _partial/after_footer.pug

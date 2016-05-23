@@ -1,0 +1,52 @@
+/**
+ * Base
+ */
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+
+    color: $textColor;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+/**
+ * Layout
+ */
+
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+
+    height: auto;
+    min-height: 100%;
+
+    font-family: "Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+    background-color: $bodyBgColor;
+
+    color: $textColor;
+}
+
+.site-page {
+    width: 100%;
+}
+
+.main {
+    margin-top: 100px !important;
+    padding-right: 10px;
+    padding-left: 10px;
+}

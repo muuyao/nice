@@ -1,0 +1,21 @@
+article.main.single-post(class=page.layout)
+    h2.post-title= page.title
+
+    .post-meta
+        include post/meta.pug
+        +postDate(page.date)
+        +postTag(page.tags)
+
+
+    .post-body
+        != page.content
+
+    include article_pagination.pug
+
+
+if page.comments && theme.disqus_shortname
+    section#comments
+        div#disqus_thread
+            noscript Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.
+
+

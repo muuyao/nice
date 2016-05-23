@@ -1,0 +1,6 @@
+nav.article-pagination
+    if(page.prev)
+        a.article-prev.pagination-link(href=url_for(page.prev.path), title=page.prev.title)!= "<span>&#10094;</span>" + page.prev.title
+
+    if(page.next)
+        a.article-next.pagination-link(href=url_for(page.next.path), title=page.next.title)!= page.next.title + "<span>&#10095;</span>"

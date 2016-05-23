@@ -1,0 +1,8 @@
+mixin postDate(postDate)
+  span.post-date= date(postDate)
+
+mixin postTag(tags)
+    if tags.length
+        span.post-tag
+            each tag in tags.toArray()
+                a(href=url_for('tags/' + tag.name))= tag.name

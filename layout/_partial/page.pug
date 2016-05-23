@@ -1,0 +1,12 @@
+article.main.single-post(class=page.layout)
+    h2.post-title= page.title
+
+    .post-body
+        != page.content
+
+if page.comments && theme.disqus_shortname
+    section#comments
+        div#disqus_thread
+            noscript Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.
+
+

@@ -1,0 +1,49 @@
+.single-post{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+
+    .post-title{
+        font-size:30px;
+        font-weight: 700;
+    }
+
+    .post-meta{
+        font-size: 13px;
+        color: #555;
+        margin: 20px 0 0;
+
+        .post-date{
+            margin-right: 10px;
+        }
+
+        .post-tag a{
+
+            &:after{
+                content: ', ';
+            }
+
+            &:last-child:after{
+                content:'';
+            }
+
+            &:hover{
+                color: #333;
+            }
+        }
+    }
+
+    .post-body{
+
+        margin-bottom: 50px;
+        &:before{
+            content: '';
+            height: 1px;
+            width: 100px;
+            background: #eee;
+            display: block;
+            margin: 30px auto 40px;
+        }
+    }
+}

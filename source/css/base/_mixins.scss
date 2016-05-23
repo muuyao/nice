@@ -1,0 +1,19 @@
+// 清除浮动
+%clearfix{
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Text overflow
+// 元素可以设置宽度才可应用省略号
+%ellipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
