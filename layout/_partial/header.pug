@@ -11,5 +11,5 @@ header.site-header
             a(href=theme.rss title!=__('rss') class='iconfont icon-rss')
         each menu in theme.share_menu
                 li
-                    a(href='javascript:;' title!=__(menu) class='iconfont icon-' + menu)
+                    a(href='javascript:;' title!=__(menu) class='share-item iconfont icon-' + menu data-plat=menu)
 

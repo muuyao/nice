@@ -1,9 +1,10 @@
-article.main.single-post(class=page.layout)
+article.main.single-post(class=page.layout + '-layout')
     h2.post-title= page.title
 
     .post-meta
         include post/meta.pug
         +postDate(page.date)
+        +postComments(page.path)
         +postTag(page.tags)
 
 
@@ -12,10 +13,9 @@ article.main.single-post(class=page.layout)
 
     include article_pagination.pug
 
-
-if page.comments && theme.disqus_shortname
-    section#comments
-        div#disqus_thread
-            noscript Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.
+    if page.comments && theme.disqus_shortname
+        section#comments
+            div#disqus_thread
+                noscript Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.
 
 

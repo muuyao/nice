@@ -11,9 +11,9 @@ section.archives-wrap.main
                         a(href=url_for(post.path))= post.title
 
                     .post-body!= post.excerpt ? truncate(strip_html(post.excerpt), {length:90}) : truncate(strip_html(post.content), {length:90})
-
-                    +postTag(post.tags)
+                    .post-meta
+                        +postComments(post.path)
+                        | ·
+                        +postTag(post.tags)
 
     include list_pagination.pug
-
-

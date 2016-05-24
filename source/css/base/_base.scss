@@ -25,28 +25,33 @@ a {
  * Layout
  */
 
-html {
+html, body {
     height: 100%;
 }
 
 body {
     position: relative;
 
-    height: auto;
-    min-height: 100%;
-
     font-family: "Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
-    background-color: $bodyBgColor;
 
     color: $textColor;
+    background-color: $bodyBgColor;
 }
 
 .site-page {
     width: 100%;
+    height: auto !important;
+    min-height: 100%;
+    position: relative;
 }
 
 .main {
-    margin-top: 100px !important;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 100px !important;
     padding-right: 10px;
     padding-left: 10px;
+    padding-bottom: 120px;
 }
+
+

@@ -1,8 +1,4 @@
 .archives-wrap {
-    position: relative;
-
-    margin: 0 auto;
-    padding-bottom: 50px;
     max-width: 1000px;
     &:after {
         display: block;
@@ -70,23 +66,31 @@
 
             color: #555;
         }
-        .post-tag {
+        .post-meta {
             position: absolute;
             bottom: 50px;
 
             font-size: 12px;
-            a {
+            color: #999;
+
+            a{
                 color: #999;
-                &:after {
-                    content: ", ";
-                }
-                &:last-child:after {
-                    content: "";
-                }
-                &:hover {
-                    color: #333;
+            }
+
+            .post-tag{
+                a {
+                    &:after {
+                        content: ", ";
+                    }
+                    &:last-child:after {
+                        content: "";
+                    }
+                    &:hover {
+                        color: #333;
+                    }
                 }
             }
+
         }
     }
 }
@@ -134,7 +138,7 @@
                 height: auto;
             }
 
-            .post-tag{
+            .post-meta{
                 position: static;
             }
         }

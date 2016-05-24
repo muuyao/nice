@@ -1,19 +1,10 @@
-if !is_home() && !is_archive() && page.comments &&  theme.disqus_shortname
-  script.
-    var disqus_shortname = '!{theme.disqus_shortname}';
-    var disqus_url = '!{page.permalink}';
-    (function(){
-      var dsq = document.createElement('script');
-      dsq.type = 'text/javascript';
-      dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-if is_post()
-  script(src='//cdn.bootcss.com/highlight.js/9.4.0/highlight.min.js')
-  script.
-    hljs.initHighlightingOnLoad();
+include post/modal.pug
 
-!= js("js/global")
+// 加载 jquery
+script(src='//cdn.bootcss.com/jquery/2.2.4/jquery.min.js')
+include script/social_share.pug
+
+// 加载全局js及页面js
+block page_js
 
 

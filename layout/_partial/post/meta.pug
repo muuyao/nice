@@ -2,7 +2,13 @@ mixin postDate(postDate)
   span.post-date= date(postDate)
 
 mixin postTag(tags)
-    if tags.length
-        span.post-tag
+    if tags && tags.length
+        span.post-tag 标签&nbsp;
             each tag in tags.toArray()
                 a(href=url_for('tags/' + tag.name))= tag.name
+
+mixin postComments(path)
+    if !is_page()
+        span.post-comments 评论&nbsp;
+            span(class="disqus-comment-count" data-disqus-identifier=path) 0
+

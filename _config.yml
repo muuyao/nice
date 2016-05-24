@@ -2,8 +2,9 @@
 menu:
   #Home: /
   archives: /archives
-  tags: /tags
-  about: /about
+  book: /read
+  #tags: /tag
+  #about: /about
 rss: /atom.xml
 
 share_menu:
@@ -51,4 +52,7 @@ sologn: 'However long the night, the dawn will break.'
 home_menu:
   Blog: /archives
   Github: https://github.com/muuyao
-  About: /about
+  Twitter: https://twitter.com/muuyao
+  Instagram: https://www.instagram.com/muyao93
+  # About: /about
+

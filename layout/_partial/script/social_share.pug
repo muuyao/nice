@@ -1,0 +1,8 @@
+script(src='//cdn.bootcss.com/lrsjng.jquery-qrcode/0.12.0/jquery.qrcode.min.js')
+!=js('js/share.js')
+script.
+    $('.share-menu').share({
+        url: '!{page.path}',
+        image: '!{page.thumbnail ? page.thumbnail : ""}',
+        appkey:''
+    });
