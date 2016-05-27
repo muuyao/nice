@@ -10,7 +10,7 @@ block page_description
 
 title
     block site_title
-        = config.title
+        = config.title + '-' + config.subtitle
 
 // icon
 link(rel="shortcut icon" type='image/png' href=url_for('images/icon/favicon.png'))
@@ -23,7 +23,7 @@ if theme.rss
     link(rel="alternate", href!=theme.rss ? theme.rss : url_for("rss2.xml"), title=config.title, type="application/rss2.xml")
 
 //- Stylesheets
-link(rel='stylesheet' href='//at.alicdn.com/t/font_1463996156_546314.css')
+link(rel='stylesheet' href='//at.alicdn.com/t/font_1464319066_3598511.css')
 if is_post()
     link(rel='stylesheet' href='//cdn.bootcss.com/highlight.js/9.4.0/styles/default.min.css')
 block page_css

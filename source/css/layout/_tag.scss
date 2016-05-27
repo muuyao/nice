@@ -1,0 +1,32 @@
+.tag-list, .category-list{
+    list-style: none;
+    font-size: 0;
+}
+
+
+.tag-list-item,
+.category-list-item{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: $baseFontSize;
+
+    margin-right: 10px;
+
+    border: 1px solid #eaeaea;
+
+    padding: 5px 15px;
+
+    &:hover{
+        background: #fafafa;
+    }
+}
+
+.tag-list-link,
+.category-list-link{
+    padding-right: 5px;
+}
+
+.tag-list-count{
+
+}
+

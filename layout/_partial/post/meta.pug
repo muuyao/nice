@@ -12,3 +12,13 @@ mixin postComments(path)
         span.post-comments 评论&nbsp;
             span(class="disqus-comment-count" data-disqus-identifier=path) 0
 
+mixin postCategories(cats)
+    if cats && cats.length
+        span.post-categories 分类&nbsp;
+            each cat in cats.toArray()
+                a(href=url_for('categories/' + cat.name))= cat.name
+
+mixin postLength(post)
+    span.post-length 字数&nbsp;
+        != strip_html(post).length
+

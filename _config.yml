@@ -2,8 +2,9 @@
 menu:
   #Home: /
   archives: /archives
-  book: /read
-  #tags: /tag
+  categories: /category
+  #book: /read
+  tags: /tag
   #about: /about
 rss: /atom.xml
 
@@ -11,7 +12,7 @@ share_menu:
 - wechat
 - weibo
 
-header_title: '牧'
+header_title: 'M'
 disqus_shortname: muyao
 
 # Content
@@ -48,7 +49,7 @@ fb_app_id:
 
 #home info
 logo: /images/logo.jpg
-sologn: 'However long the night, the dawn will break.'
+sologn: 'In me the tiger sniffs the rose'
 home_menu:
   Blog: /archives
   Github: https://github.com/muuyao

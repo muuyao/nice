@@ -1,19 +1,24 @@
 section.archives-wrap.main
+    include archive_part.pug
     section.post-items
         each post, index in page.posts.toArray()
             article.post-item(data-type= index % 2 ? 'even' : 'odd')
                 a(class='post-thumbnail' href=url_for(post.path) title=post.title)
-                    img(src=post.thumbnail ? post.thumbnail : theme.default_thumbnail)
+                    img(src=post.thumbnail ? post.thumbnail : site.data.thumbnail[index % 8])
                 .post-brief
                     include post/meta.pug
                     +postDate(post.date)
                     h2
                         a(href=url_for(post.path))= post.title
 
-                    .post-body!= post.excerpt ? truncate(strip_html(post.excerpt), {length:90}) : truncate(strip_html(post.content), {length:90})
+                    .post-body.md-body!= post.excerpt ? truncate(strip_html(post.excerpt), {length:90}) : truncate(strip_html(post.content), {length:90})
                     .post-meta
                         +postComments(post.path)
-                        | ·
+                        if post.tags.length
+                            | ·
                         +postTag(post.tags)
+                        if post.categories.length
+                            | ·
+                        +postCategories(post.categories)
 
     include list_pagination.pug

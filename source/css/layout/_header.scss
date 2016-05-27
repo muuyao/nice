@@ -19,8 +19,9 @@
 .site-title {
     float: left;
 
-    margin-right: 30px;
+    margin-right: 20px;
     font-weight: 400;
+    font-size: 22px;
 }
 
 .site-nav {
@@ -54,6 +55,16 @@
     }
 }
 
+.header-page-title{
+    display:inline-block;
+    max-width: 800px;
+    padding: 0 10px;
+    color: #666;
+    font-weight: 400;
+    font-size: 14px;
+
+    @extend %ellipsis;
+}
 
 @media screen and (max-width: 768px) {
     .share-menu{

@@ -4,8 +4,16 @@ prepend site_title
   | #{page.title} |&nbsp;
 
 block site_body
-  include _partial/header.pug
-  include _partial/article.pug
+    include _partial/header.pug
+    case page.layout
+        when 'page'
+            include _partial/article.pug
+        when 'tag'
+            include _partial/page/tag.pug
+        when 'category'
+            include _partial/page/category.pug
+        when 'about'
+            include _partial/page/about.pug
 
 block page_js
     include _partial/script/highlight.pug

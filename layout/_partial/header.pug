@@ -6,6 +6,9 @@ header.site-header
             each url, index in theme.menu
                 li
                     a(href=url title!=__(index) class='iconfont icon-' + index)
+    if !is_home() && !is_archive()
+        h3.header-page-title.hidden
+            != page.title
     ul.share-menu.menu-list
         li
             a(href=theme.rss title!=__('rss') class='iconfont icon-rss')

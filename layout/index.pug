@@ -11,7 +11,9 @@ block site_body
                 each url, index in theme.home_menu
                     li
                         a(href=url)= index
+    div(id='particles')
 block page_js
+    script(src='//cdn.bootcss.com/particles.js/2.0.0/particles.min.js')
     !=js('js/index')
 
 

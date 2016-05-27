@@ -1,17 +1,17 @@
-.post-body {
+.md-body {
     font-size: 14px;
     line-height: 2;
 }
-.post-body > *:first-child {
+.md-body > *:first-child {
     margin-top: 0 !important;
 }
-.post-body > *:last-child {
+.md-body > *:last-child {
     margin-bottom: 0 !important;
 }
-.post-body a.absent {
+.md-body a.absent {
     color: #CC0000;
 }
-.post-body a.anchor {
+.md-body a.anchor {
     bottom: 0;
     cursor: pointer;
     display: block;
@@ -21,151 +21,151 @@
     position: absolute;
     top: 0;
 }
-.post-body h1, .post-body h2, .post-body h3, .post-body h4, .post-body h5, .post-body h6 {
+.md-body h1, .md-body h2, .md-body h3, .md-body h4, .md-body h5, .md-body h6 {
     cursor: text;
     font-weight: bold;
     margin: 20px 0 10px;
     padding: 0;
     position: relative;
 }
-.post-body h1 .mini-icon-link, .post-body h2 .mini-icon-link, .post-body h3 .mini-icon-link, .post-body h4 .mini-icon-link, .post-body h5 .mini-icon-link, .post-body h6 .mini-icon-link {
+.md-body h1 .mini-icon-link, .md-body h2 .mini-icon-link, .md-body h3 .mini-icon-link, .md-body h4 .mini-icon-link, .md-body h5 .mini-icon-link, .md-body h6 .mini-icon-link {
     color: #000000;
     display: none;
 }
-.post-body h1:hover a.anchor, .post-body h2:hover a.anchor, .post-body h3:hover a.anchor, .post-body h4:hover a.anchor, .post-body h5:hover a.anchor, .post-body h6:hover a.anchor {
+.md-body h1:hover a.anchor, .md-body h2:hover a.anchor, .md-body h3:hover a.anchor, .md-body h4:hover a.anchor, .md-body h5:hover a.anchor, .md-body h6:hover a.anchor {
     line-height: 1;
     margin-left: -22px;
     padding-left: 0;
     text-decoration: none;
     top: 15%;
 }
-.post-body h1:hover a.anchor .mini-icon-link, .post-body h2:hover a.anchor .mini-icon-link, .post-body h3:hover a.anchor .mini-icon-link, .post-body h4:hover a.anchor .mini-icon-link, .post-body h5:hover a.anchor .mini-icon-link, .post-body h6:hover a.anchor .mini-icon-link {
+.md-body h1:hover a.anchor .mini-icon-link, .md-body h2:hover a.anchor .mini-icon-link, .md-body h3:hover a.anchor .mini-icon-link, .md-body h4:hover a.anchor .mini-icon-link, .md-body h5:hover a.anchor .mini-icon-link, .md-body h6:hover a.anchor .mini-icon-link {
     display: inline-block;
 }
-.post-body h1 tt, .post-body h1 code, .post-body h2 tt, .post-body h2 code, .post-body h3 tt, .post-body h3 code, .post-body h4 tt, .post-body h4 code, .post-body h5 tt, .post-body h5 code, .post-body h6 tt, .post-body h6 code {
+.md-body h1 tt, .md-body h1 code, .md-body h2 tt, .md-body h2 code, .md-body h3 tt, .md-body h3 code, .md-body h4 tt, .md-body h4 code, .md-body h5 tt, .md-body h5 code, .md-body h6 tt, .md-body h6 code {
     font-size: inherit;
 }
-.post-body h1 {
+.md-body h1 {
     color: #000000;
     font-size: 28px;
 }
-.post-body h2 {
+.md-body h2 {
     border-bottom: 1px solid #CCCCCC;
     color: #000000;
     font-size: 24px;
 }
-.post-body h3 {
+.md-body h3 {
     font-size: 18px;
 }
-.post-body h4 {
+.md-body h4 {
     font-size: 16px;
 }
-.post-body h5 {
+.md-body h5 {
     font-size: 14px;
 }
-.post-body h6 {
+.md-body h6 {
     color: #777777;
     font-size: 14px;
 }
-.post-body p, .post-body blockquote, .post-body ul, .post-body ol, .post-body dl, .post-body table, .post-body pre {
+.md-body p, .md-body blockquote, .md-body ul, .md-body ol, .md-body dl, .md-body table, .md-body pre {
     margin: 15px 0;
 }
-.post-body hr {
+.md-body hr {
     background: url("https://a248.e.akamai.net/assets.github.com/assets/primer/post/dirty-shade-350cca8f57223ebd53603021b2e670f4f319f1b7.png") repeat-x scroll 0 0 transparent;
     border: 0 none;
     color: #CCCCCC;
     height: 4px;
     padding: 0;
 }
-.post-body > h2:first-child, .post-body > h1:first-child, .post-body > h1:first-child + h2, .post-body > h3:first-child, .post-body > h4:first-child, .post-body > h5:first-child, .post-body > h6:first-child {
+.md-body > h2:first-child, .md-body > h1:first-child, .md-body > h1:first-child + h2, .md-body > h3:first-child, .md-body > h4:first-child, .md-body > h5:first-child, .md-body > h6:first-child {
     margin-top: 0;
     padding-top: 0;
 }
-.post-body a:first-child h1, .post-body a:first-child h2, .post-body a:first-child h3, .post-body a:first-child h4, .post-body a:first-child h5, .post-body a:first-child h6 {
+.md-body a:first-child h1, .md-body a:first-child h2, .md-body a:first-child h3, .md-body a:first-child h4, .md-body a:first-child h5, .md-body a:first-child h6 {
     margin-top: 0;
     padding-top: 0;
 }
-.post-body h1 + p, .post-body h2 + p, .post-body h3 + p, .post-body h4 + p, .post-body h5 + p, .post-body h6 + p {
+.md-body h1 + p, .md-body h2 + p, .md-body h3 + p, .md-body h4 + p, .md-body h5 + p, .md-body h6 + p {
     margin-top: 0;
 }
-.post-body li p.first {
+.md-body li p.first {
     display: inline-block;
 }
-.post-body ul, .post-body ol {
+.md-body ul, .md-body ol {
     padding-left: 30px;
 }
-.post-body ul.no-list, .post-body ol.no-list {
+.md-body ul.no-list, .md-body ol.no-list {
     list-style-type: none;
     padding: 0;
 }
-.post-body ul li > *:first-child, .post-body ol li > *:first-child {
+.md-body ul li > *:first-child, .md-body ol li > *:first-child {
     margin-top: 0;
 }
-.post-body ul ul, .post-body ul ol, .post-body ol ol, .post-body ol ul {
+.md-body ul ul, .md-body ul ol, .md-body ol ol, .md-body ol ul {
     margin-bottom: 0;
 }
-.post-body dl {
+.md-body dl {
     padding: 0;
 }
-.post-body dl dt {
+.md-body dl dt {
     font-size: 14px;
     font-style: italic;
     font-weight: bold;
     margin: 15px 0 5px;
     padding: 0;
 }
-.post-body dl dt:first-child {
+.md-body dl dt:first-child {
     padding: 0;
 }
-.post-body dl dt > *:first-child {
+.md-body dl dt > *:first-child {
     margin-top: 0;
 }
-.post-body dl dt > *:last-child {
+.md-body dl dt > *:last-child {
     margin-bottom: 0;
 }
-.post-body dl dd {
+.md-body dl dd {
     margin: 0 0 15px;
     padding: 0 15px;
 }
-.post-body dl dd > *:first-child {
+.md-body dl dd > *:first-child {
     margin-top: 0;
 }
-.post-body dl dd > *:last-child {
+.md-body dl dd > *:last-child {
     margin-bottom: 0;
 }
-.post-body blockquote {
+.md-body blockquote {
     border-left: 4px solid #DDDDDD;
     color: #777777;
     padding: 0 15px;
 }
-.post-body blockquote > *:first-child {
+.md-body blockquote > *:first-child {
     margin-top: 0;
 }
-.post-body blockquote > *:last-child {
+.md-body blockquote > *:last-child {
     margin-bottom: 0;
 }
-.post-body table th {
+.md-body table th {
     font-weight: bold;
 }
-.post-body table th, .post-body table td {
+.md-body table th, .md-body table td {
     border: 1px solid #CCCCCC;
     padding: 6px 13px;
 }
-.post-body table tr {
+.md-body table tr {
     background-color: #FFFFFF;
     border-top: 1px solid #CCCCCC;
 }
-.post-body table tr:nth-child(2n) {
+.md-body table tr:nth-child(2n) {
     background-color: #F8F8F8;
 }
-.post-body img {
+.md-body img {
     max-width: 100%;
 }
-.post-body span.frame {
+.md-body span.frame {
     display: block;
     overflow: hidden;
 }
-.post-body span.frame > span {
+.md-body span.frame > span {
     border: 1px solid #DDDDDD;
     display: block;
     float: left;
@@ -174,68 +174,68 @@
     padding: 7px;
     width: auto;
 }
-.post-body span.frame span img {
+.md-body span.frame span img {
     display: block;
     float: left;
 }
-.post-body span.frame span span {
+.md-body span.frame span span {
     clear: both;
     color: #333333;
     display: block;
     padding: 5px 0 0;
 }
-.post-body span.align-center {
+.md-body span.align-center {
     clear: both;
     display: block;
     overflow: hidden;
 }
-.post-body span.align-center > span {
+.md-body span.align-center > span {
     display: block;
     margin: 13px auto 0;
     overflow: hidden;
     text-align: center;
 }
-.post-body span.align-center span img {
+.md-body span.align-center span img {
     margin: 0 auto;
     text-align: center;
 }
-.post-body span.align-right {
+.md-body span.align-right {
     clear: both;
     display: block;
     overflow: hidden;
 }
-.post-body span.align-right > span {
+.md-body span.align-right > span {
     display: block;
     margin: 13px 0 0;
     overflow: hidden;
     text-align: right;
 }
-.post-body span.align-right span img {
+.md-body span.align-right span img {
     margin: 0;
     text-align: right;
 }
-.post-body span.float-left {
+.md-body span.float-left {
     display: block;
     float: left;
     margin-right: 13px;
     overflow: hidden;
 }
-.post-body span.float-left span {
+.md-body span.float-left span {
     margin: 13px 0 0;
 }
-.post-body span.float-right {
+.md-body span.float-right {
     display: block;
     float: right;
     margin-left: 13px;
     overflow: hidden;
 }
-.post-body span.float-right > span {
+.md-body span.float-right > span {
     display: block;
     margin: 13px auto 0;
     overflow: hidden;
     text-align: right;
 }
-.post-body code, .post-body tt {
+.md-body code, .md-body tt {
     background-color: #F8F8F8;
     border: 1px solid #EAEAEA;
     border-radius: 3px 3px 3px 3px;
@@ -243,14 +243,14 @@
     padding: 0 5px;
     white-space: nowrap;
 }
-.post-body pre > code {
+.md-body pre > code {
     background: none repeat scroll 0 0 transparent;
     border: medium none;
     margin: 0;
     padding: 0;
     white-space: pre;
 }
-.post-body .highlight pre, .post-body pre {
+.md-body .highlight pre, .md-body pre {
     background-color: #F8F8F8;
     border: 1px solid #CCCCCC;
     border-radius: 3px 3px 3px 3px;
@@ -259,7 +259,7 @@
     overflow: auto;
     padding: 6px 10px;
 }
-.post-body pre code, .post-body pre tt {
+.md-body pre code, .md-body pre tt {
     background-color: transparent;
     border: medium none;
 }

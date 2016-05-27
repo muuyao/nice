@@ -1,19 +1,10 @@
 article.main.single-post(class=page.layout + '-layout')
     h2.post-title= page.title
 
-    .post-meta
-        include post/meta.pug
-        +postDate(page.date)
-        +postLength(page.content)
-        +postComments(page.path)
-        +postTag(page.tags)
-        +postCategories(page.categories)
 
+    .post-body
+        != list_tags()
 
-    .post-body.md-body
-        != page.content
-
-    include article_pagination.pug
 
     if page.comments && theme.disqus_shortname
         section#comments
